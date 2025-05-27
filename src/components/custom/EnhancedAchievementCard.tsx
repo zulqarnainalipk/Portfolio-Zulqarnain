@@ -247,7 +247,7 @@ const EnhancedAchievementCard: React.FC<EnhancedAchievementCardProps> = ({ achie
           transition={{ 
             duration: 3, 
             repeat: Infinity, 
-            repeatType: "mirror",
+            repeatType: "mirror" as const,
             ease: "easeInOut"
           }}
         />

@@ -190,7 +190,7 @@ const AnimatedCard = forwardRef<HTMLDivElement, AnimatedCardProps>(({
             transition: {
               duration: 3,
               repeat: Infinity,
-              repeatType: "mirror",
+              repeatType: "mirror" as const,
               ease: "easeInOut"
             }
           }
@@ -202,7 +202,7 @@ const AnimatedCard = forwardRef<HTMLDivElement, AnimatedCardProps>(({
             transition: {
               duration: 2,
               repeat: Infinity,
-              repeatType: "mirror",
+              repeatType: "mirror" as const,
               ease: "easeInOut"
             }
           }
@@ -214,7 +214,7 @@ const AnimatedCard = forwardRef<HTMLDivElement, AnimatedCardProps>(({
             transition: {
               duration: 5,
               repeat: Infinity,
-              repeatType: "mirror",
+              repeatType: "mirror" as const,
               ease: "easeInOut"
             }
           }
@@ -230,7 +230,7 @@ const AnimatedCard = forwardRef<HTMLDivElement, AnimatedCardProps>(({
             transition: {
               duration: 4,
               repeat: Infinity,
-              repeatType: "mirror",
+              repeatType: "mirror" as const,
               ease: "easeInOut"
             }
           }
@@ -253,7 +253,7 @@ const AnimatedCard = forwardRef<HTMLDivElement, AnimatedCardProps>(({
       rotateX: isHovered ? rotateX : 0,
       rotateY: isHovered ? rotateY : 0,
       transformPerspective,
-      transformStyle: "preserve-3d",
+      transformStyle: "preserve-3d" as const,
       willChange: "transform"
     }
   } : {};

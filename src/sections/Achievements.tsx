@@ -186,10 +186,10 @@ const Achievements = () => {
   
   // Filter achievements based on selected group
   const filteredAchievements = selectedGroup === 'all' 
-    ? achievementData 
+    ? competitionAchievements 
     : selectedGroup === 'competitions'
-      ? achievementData.filter(a => a.type === 'gold' || a.type === 'silver' || a.type === 'bronze')
-      : achievementData.filter(a => a.type === 'star' || a.type === 'award');
+      ? competitionAchievements.filter(a => a.type === 'gold' || a.type === 'silver' || a.type === 'bronze')
+      : competitionAchievements.filter(a => a.type === 'star' || a.type === 'award');
   
   return (
     <section id="achievements" className="py-16 md:py-24 bg-background text-foreground">
@@ -338,17 +338,17 @@ const Achievements = () => {
                     }}
                     className="p-3 rounded-full"
                     style={{ 
-                      backgroundColor: achievementData[selectedAchievement].type.includes('gold') ? 'rgba(255, 215, 0, 0.2)' :
-                                       achievementData[selectedAchievement].type.includes('silver') ? 'rgba(192, 192, 192, 0.2)' :
-                                       achievementData[selectedAchievement].type.includes('bronze') ? 'rgba(205, 127, 50, 0.2)' :
-                                       achievementData[selectedAchievement].type.includes('star') ? 'rgba(0, 163, 136, 0.2)' : 'rgba(99, 102, 241, 0.2)',
-                      boxShadow: achievementData[selectedAchievement].type.includes('gold') ? '0 0 15px rgba(255, 215, 0, 0.3)' :
-                                 achievementData[selectedAchievement].type.includes('silver') ? '0 0 15px rgba(192, 192, 192, 0.3)' :
-                                 achievementData[selectedAchievement].type.includes('bronze') ? '0 0 15px rgba(205, 127, 50, 0.3)' :
-                                 achievementData[selectedAchievement].type.includes('star') ? '0 0 15px rgba(0, 163, 136, 0.3)' : '0 0 15px rgba(99, 102, 241, 0.3)'
+                      backgroundColor: competitionAchievements[selectedAchievement].type.includes('gold') ? 'rgba(255, 215, 0, 0.2)' :
+                                       competitionAchievements[selectedAchievement].type.includes('silver') ? 'rgba(192, 192, 192, 0.2)' :
+                                       competitionAchievements[selectedAchievement].type.includes('bronze') ? 'rgba(205, 127, 50, 0.2)' :
+                                       competitionAchievements[selectedAchievement].type.includes('star') ? 'rgba(0, 163, 136, 0.2)' : 'rgba(99, 102, 241, 0.2)',
+                      boxShadow: competitionAchievements[selectedAchievement].type.includes('gold') ? '0 0 15px rgba(255, 215, 0, 0.3)' :
+                                 competitionAchievements[selectedAchievement].type.includes('silver') ? '0 0 15px rgba(192, 192, 192, 0.3)' :
+                                 competitionAchievements[selectedAchievement].type.includes('bronze') ? '0 0 15px rgba(205, 127, 50, 0.3)' :
+                                 competitionAchievements[selectedAchievement].type.includes('star') ? '0 0 15px rgba(0, 163, 136, 0.3)' : '0 0 15px rgba(99, 102, 241, 0.3)'
                     }}
                   >
-                    {getAchievementIcon(achievementData[selectedAchievement].type)}
+                    {getAchievementIcon(competitionAchievements[selectedAchievement].type)}
                   </motion.div>
                   
                   <div>
@@ -358,7 +358,7 @@ const Achievements = () => {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.3, duration: 0.4 }}
                     >
-                      {achievementData[selectedAchievement].title}
+                      {competitionAchievements[selectedAchievement].title}
                     </motion.h3>
                     <motion.p 
                       className="text-muted-foreground"
@@ -366,7 +366,7 @@ const Achievements = () => {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.4, duration: 0.4 }}
                     >
-                      {achievementData[selectedAchievement].competition}
+                      {competitionAchievements[selectedAchievement].competition}
                     </motion.p>
                   </div>
                 </motion.div>
@@ -387,7 +387,7 @@ const Achievements = () => {
                       <Trophy size={14} className="mr-2" />
                       Organizer
                     </h4>
-                    <p className="ml-6">{achievementData[selectedAchievement].organizer}</p>
+                    <p className="ml-6">{competitionAchievements[selectedAchievement].organizer}</p>
                   </motion.div>
                   
                   <motion.div
@@ -399,7 +399,7 @@ const Achievements = () => {
                       <Star size={14} className="mr-2" />
                       Year
                     </h4>
-                    <p className="ml-6">{achievementData[selectedAchievement].year}</p>
+                    <p className="ml-6">{competitionAchievements[selectedAchievement].year}</p>
                   </motion.div>
                   
                   <motion.div
@@ -411,7 +411,7 @@ const Achievements = () => {
                       <Award size={14} className="mr-2" />
                       Details
                     </h4>
-                    <p className="ml-6">{achievementData[selectedAchievement].description}</p>
+                    <p className="ml-6">{competitionAchievements[selectedAchievement].description}</p>
                   </motion.div>
                 </motion.div>
                 

@@ -178,7 +178,7 @@ const EnhancedSkillBar: React.FC<{
             animate={{ 
               boxShadow: [`0 0 5px ${color}80`, `0 0 12px ${color}`, `0 0 5px ${color}80`] 
             }}
-            transition={{ duration: 1.5, repeat: Infinity, repeatType: "mirror" }}
+            transition={{ duration: 1.5, repeat: Infinity, repeatType: "mirror" as const }}
           />
         )}
         
@@ -221,7 +221,7 @@ const EnhancedFloatingSkillTag: React.FC<{
         backgroundColor: `${color}dd`, // Less transparency
         zIndex: index % 3,
         boxShadow: `0 2px 10px ${color}50`,
-        transformStyle: "preserve-3d"
+        transformStyle: "preserve-3d" as const
       }}
       initial={{ opacity: 0, scale: 0.5, y: 20 }}
       animate={{ 
@@ -241,21 +241,21 @@ const EnhancedFloatingSkillTag: React.FC<{
         y: { 
           duration: position.current.animDuration, 
           repeat: Infinity, 
-          repeatType: "mirror", 
+          repeatType: "mirror" as const, 
           ease: "easeInOut",
           delay: position.current.animDelay
         },
         rotate: {
           duration: position.current.animDuration * 1.2,
           repeat: Infinity,
-          repeatType: "mirror",
+          repeatType: "mirror" as const,
           ease: "easeInOut",
           delay: position.current.animDelay
         },
         boxShadow: {
           duration: position.current.animDuration * 0.8,
           repeat: Infinity,
-          repeatType: "mirror",
+          repeatType: "mirror" as const,
           ease: "easeInOut"
         }
       }}
@@ -529,7 +529,7 @@ const SkillsVisualization2D: React.FC = () => {
           transition={{ 
             duration: 4, 
             repeat: Infinity,
-            repeatType: "mirror",
+            repeatType: "mirror" as const,
             ease: "easeInOut"
           }}
         >
@@ -543,7 +543,7 @@ const SkillsVisualization2D: React.FC = () => {
             transition={{ 
               duration: 3, 
               repeat: Infinity,
-              repeatType: "mirror",
+              repeatType: "mirror" as const,
               ease: "easeInOut"
             }}
           />
@@ -575,7 +575,7 @@ const SkillsVisualization2D: React.FC = () => {
             transition={{
               duration: 8,
               repeat: Infinity,
-              repeatType: "loop",
+              repeatType: "loop" as const,
               ease: "linear",
               delay: i * 0.5,
               times: [0, 0.5, 1]

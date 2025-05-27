@@ -191,7 +191,7 @@ const EnhancedProjectCardV3: React.FC<EnhancedProjectCardProps> = ({ project, in
       style={{ 
         rotateX: isHovered ? rotateX : 0, 
         rotateY: isHovered ? rotateY : 0,
-        transformStyle: "preserve-3d",
+        transformStyle: "preserve-3d" as const,
         perspective: 1000,
         willChange: "transform"
       }}

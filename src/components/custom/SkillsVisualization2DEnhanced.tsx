@@ -178,7 +178,7 @@ const EnhancedSkillBar: React.FC<{
             animate={{ 
               boxShadow: [`0 0 5px ${color}80`, `0 0 12px ${color}`, `0 0 5px ${color}80`] 
             }}
-            transition={{ duration: 1.5, repeat: Infinity, repeatType: "mirror" }}
+            transition={{ duration: 1.5, repeat: Infinity, repeatType: "mirror" as const }}
           />
         )}
         
@@ -240,21 +240,21 @@ const EnhancedFloatingSkillTag: React.FC<{
         y: { 
           duration: position.current.animDuration, 
           repeat: Infinity, 
-          repeatType: "mirror", 
+          repeatType: "mirror" as const, 
           ease: "easeInOut",
           delay: position.current.animDelay
         },
         rotate: {
           duration: position.current.animDuration * 1.2,
           repeat: Infinity,
-          repeatType: "mirror",
+          repeatType: "mirror" as const,
           ease: "easeInOut",
           delay: position.current.animDelay
         },
         boxShadow: {
           duration: position.current.animDuration * 0.8,
           repeat: Infinity,
-          repeatType: "mirror",
+          repeatType: "mirror" as const,
           ease: "easeInOut"
         }
       }}
@@ -589,7 +589,7 @@ const SkillsVisualization2DEnhanced: React.FC = () => {
           transition={{ 
             duration: 4, 
             repeat: Infinity,
-            repeatType: "mirror",
+            repeatType: "mirror" as const,
             ease: "easeInOut"
           }}
         >
@@ -603,7 +603,7 @@ const SkillsVisualization2DEnhanced: React.FC = () => {
             transition={{ 
               duration: 3, 
               repeat: Infinity,
-              repeatType: "mirror",
+              repeatType: "mirror" as const,
               ease: "easeInOut"
             }}
           />
@@ -635,7 +635,7 @@ const SkillsVisualization2DEnhanced: React.FC = () => {
             transition={{
               duration: 4 + i,
               repeat: Infinity,
-              repeatType: "mirror",
+              repeatType: "mirror" as const,
               ease: "easeInOut",
               delay: i * 0.7
             }}
