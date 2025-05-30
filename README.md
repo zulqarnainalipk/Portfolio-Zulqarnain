@@ -1,59 +1,75 @@
-ML Portfolio - Zulqarnain Ali
+# ML Portfolio – Zulqarnain Ali
 
-## 🚀 Portfolio Enhancements Completed
+A modern, responsive portfolio showcasing expertise in **Machine Learning**, **Data Science**, and **AI Engineering**. Built with clean design, smooth animations, and a focus on interactivity and performance.
 
-### Fixed Issues:
-- ✅ Skills section now displays properly with interactive animations
-- ✅ Achievements section shows all competition awards with proper data
-- ✅ Enhanced animations across all card components
-- ✅ Mobile responsive design improvements
-- ✅ Modern 2D visualizations (removed problematic 3D elements)
+---
 
-### New Features:
-- 🎨 **Universal Animation System**: Consistent floating and hover animations
-- 📊 **Interactive Skills Visualization**: Click to expand skill details
-- 🏆 **Achievement Gallery**: All 6+ competition achievements displayed
-- 💫 **Enhanced Cards**: Smooth entrance animations and hover effects
-- 📱 **Mobile First**: Fully responsive design
+## Features
 
-### Technical Stack:
-- React 18 + TypeScript
-- Framer Motion for animations
+- Universal animation system with consistent hover and entrance effects
+- Interactive 2D skills visualization with expandable details
+- Achievements gallery displaying over six competition awards
+- Enhanced project cards with smooth transitions and hover effects
+- Mobile-first, responsive layout
+- Theme switching (light/dark mode)
+
+---
+
+## Tech Stack
+
+- React 18 with TypeScript
 - Tailwind CSS for styling
+- Framer Motion for animations
 - Lucide React for icons
-- Vite for build tooling
+- Vite for fast development and builds
 
-### Development Setup:
+---
+
+## Getting Started
+
+### Development
+
 ```bash
 npm install
 npm run dev
 ```
 
-### Build for Production:
+### Production Build
+
 ```bash
 npm run build
 npm run preview
 ```
 
-### Deployment:
-The portfolio is ready for deployment on Vercel, Netlify, or any static hosting service.
+---
 
-### Key Sections:
-1. **Hero** - Dynamic introduction with theme switching
-2. **Skills** - Interactive 2D visualization of technical skills
-3. **Projects** - 8 enhanced ML/DS projects with detailed metrics
-4. **Achievements** - Competition wins and awards
-5. **Experience** - Professional background
-6. **Publications** - Research papers and contributions
-7. **Certifications** - Technical certifications and courses
-8. **Education** - Academic background
+## Deployment
 
-### Animation Features:
-- Staggered entrance animations
-- Continuous floating motion
-- Hover scale and glow effects
-- Smooth transitions between states
-- Performance optimized animations
+This portfolio is ready for deployment on platforms like **Vercel**, **Netlify**, or any static hosting provider.
 
 ---
-Portfolio showcasing expertise in Machine Learning, Data Science, and AI Engineering.
+
+## Sections Overview
+
+1. **Hero** – Introduction with theme toggle
+2. **Skills** – Animated 2D skill visualization
+3. **Projects** – Eight ML/DS projects with metrics and visuals
+4. **Achievements** – Competition awards and recognitions
+5. **Experience** – Work history and roles
+6. **Publications** – Research papers and contributions
+7. **Certifications** – Technical qualifications and courses
+8. **Education** – Academic background
+
+---
+
+## Animation Highlights
+
+- Staggered entrance animations
+- Floating motion for key elements
+- Hover effects with scale and glow
+- Smooth transitions between views
+- Performance-optimized for all devices
+
+---
+
+> Designed to deliver a clean, engaging, and professional digital presence in AI and machine learning.
