@@ -93,13 +93,13 @@ export default function Research() {
               },
               {
                 title: 'Explainable AI',
-                description: 'Making machine learning models more transparent and interpretable',
-                icon: '💡'
+                description: 'Making machine learning models more transparent and interpretable'
+                
               },
               {
                 title: 'Medical Imaging',
-                description: 'Applying deep learning to diagnose diseases from medical images',
-                icon: '🏥'
+                description: 'Applying deep learning to diagnose diseases from medical images'
+                
               },
             ].map((interest, index) => (
               <motion.div

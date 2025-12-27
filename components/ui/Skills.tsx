@@ -50,10 +50,10 @@ export default function Skills() {
           <h3 className="text-lg font-semibold text-white mb-4 text-center">Specializations</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {[
-              { title: 'Computer Vision', icon: '👁️' },
-              { title: 'NLP', icon: '📝' },
-              { title: 'Remote Sensing', icon: '🛰️' },
-              { title: 'Healthcare AI', icon: '🏥' },
+              { title: 'Computer Vision' },
+              { title: 'NLP' },
+              { title: 'Remote Sensing' },
+              { title: 'Healthcare AI' },
             ].map((spec, index) => (
               <motion.div
                 key={index}

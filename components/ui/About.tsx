@@ -7,8 +7,8 @@ import { education } from '@/constants'
 const aboutContent = {
   description: "I'm a passionate Machine Learning Engineer and AI Researcher with expertise in Computer Vision, Natural Language Processing, and Deep Learning. Currently pursuing my degree in Software Engineering at NED University, I've established myself as a Kaggle Master with 15+ medals in various competitions. My work focuses on building AI solutions that can make a real-world impact, particularly in healthcare and environmental applications.",
   stats: {
-    yearsExperience: '2+',
-    projectsCompleted: '10+',
+    yearsExperience: '3+',
+    projectsCompleted: '30+',
     kaggleMedals: '15+'
   }
 }
