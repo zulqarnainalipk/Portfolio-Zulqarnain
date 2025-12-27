@@ -427,8 +427,6 @@ interface Volunteer {
   organization: string
   date: string
   description: string
-  icon: string
-  iconBg: string
 }
 
 export const volunteer: Volunteer[] = [
