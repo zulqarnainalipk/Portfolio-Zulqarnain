@@ -110,7 +110,7 @@ export default function Research() {
                 whileHover={{ scale: 1.02 }}
                 className="bg-tertiary/50 p-5 rounded-xl border border-secondary/10 hover:border-secondary/30 transition-all duration-300"
               >
-                <span className="text-3xl mb-3 block">{interest.icon}</span>
+              
                 <h4 className="text-white font-semibold mb-2">{interest.title}</h4>
                 <p className="text-secondary text-sm">{interest.description}</p>
               </motion.div>
@@ -121,3 +121,6 @@ export default function Research() {
     </section>
   )
 }
+
+
+
