@@ -18,7 +18,8 @@ export default function Hero() {
       >
         {/* Introduction */}
         <p className="text-secondary text-lg mb-4">
-          Hello, I&apos;m
+          <br />
+		  Hello, I&apos;m
         </p>
 
         {/* Name */}
@@ -139,7 +140,7 @@ export default function Hero() {
       >
         <div className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-secondary/30 shadow-2xl shadow-secondary/20 bg-tertiary/30">
           <Image
-            src="/assets/profile-placeholder.svg"
+            src="/assets/profile-placeholder.png"
             alt="Zulqarnain Ali - Profile Photo"
             width={320}
             height={320}
