@@ -89,8 +89,7 @@ export default function Research() {
             {[
               {
                 title: 'AI Consciousness',
-                description: 'Exploring the boundaries between AI systems and conscious behavior',
-                icon: '🧠'
+                description: 'Exploring the boundaries between AI systems and conscious behavior'
               },
               {
                 title: 'Explainable AI',
