@@ -41,9 +41,7 @@ export default function Community() {
               className="bg-tertiary/50 p-6 rounded-xl border border-secondary/10 hover:border-secondary/30 transition-all duration-300"
             >
               <div className="flex items-start gap-4">
-                <div className="w-14 h-14 bg-secondary/20 rounded-xl flex items-center justify-center flex-shrink-0 text-2xl border border-secondary/20">
-                  {vol.icon}
-                </div>
+              
                 <div className="flex-grow">
                   <h3 className="text-lg font-semibold text-white mb-1">{vol.title}</h3>
                   <p className="text-secondary text-sm mb-1">{vol.organization}</p>
