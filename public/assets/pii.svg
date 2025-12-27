@@ -1,0 +1,16 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#915eff"/>
+      <stop offset="100%" style="stop-color:#00d8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="#151030"/>
+  <!-- Lock body -->
+  <rect x="60" y="90" width="80" height="60" rx="8" fill="url(#grad)" opacity="0.8"/>
+  <!-- Lock shackle -->
+  <path d="M75 90 V60 A25 25 0 0 1 125 60 V90" fill="none" stroke="url(#grad)" stroke-width="12" opacity="0.8"/>
+  <!-- Keyhole -->
+  <circle cx="100" cy="115" r="10" fill="#050816"/>
+  <rect x="96" y="115" width="8" height="20" rx="2" fill="#050816"/>
+</svg>
