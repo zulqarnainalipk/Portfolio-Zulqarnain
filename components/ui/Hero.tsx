@@ -42,16 +42,16 @@ export default function Hero() {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-3 sm:gap-4 mb-8">
           <div className="bg-tertiary/50 p-3 sm:p-4 rounded-xl text-center border border-secondary/10">
-            <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">2+</p>
+            <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">3+</p>
             <p className="text-xs sm:text-sm text-secondary">Years Experience</p>
           </div>
           <div className="bg-tertiary/50 p-3 sm:p-4 rounded-xl text-center border border-secondary/10">
-            <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">10+</p>
+            <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">30+</p>
             <p className="text-xs sm:text-sm text-secondary">Projects</p>
           </div>
           <div className="bg-tertiary/50 p-3 sm:p-4 rounded-xl text-center border border-secondary/10">
             <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">15+</p>
-            <p className="text-xs sm:text-sm text-secondary">Kaggle Medals</p>
+            <p className="text-xs sm:text-sm text-secondary">Competitive Medals</p>
           </div>
         </div>
 
