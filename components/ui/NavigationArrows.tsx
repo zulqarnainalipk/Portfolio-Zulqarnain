@@ -49,13 +49,9 @@ export default function NavigationArrows() {
 
   return (
     <>
-      {/* Left Arrow - Previous Section */}
+      {/* Left Arrow - Previous Section (Hidden but functional for keyboard) */}
       <div
-        className={`fixed left-4 top-1/2 -translate-y-1/2 z-50 transition-all duration-300 ${
-          prevRoute
-            ? 'opacity-100 cursor-pointer hover:scale-110'
-            : 'opacity-0 pointer-events-none'
-        }`}
+        className="fixed left-4 top-1/2 -translate-y-1/2 z-50 opacity-0 pointer-events-none"
       >
         <Link
           href={prevRoute || '#'}
@@ -63,20 +59,16 @@ export default function NavigationArrows() {
             e.preventDefault()
             if (prevRoute) handleNavigate(prevRoute, 'backward')
           }}
-          className="flex items-center justify-center w-12 h-12 rounded-full bg-tertiary/80 backdrop-blur-sm border border-secondary/30 hover:border-secondary hover:bg-tertiary transition-all duration-300 group"
+          className="flex items-center justify-center w-12 h-12 rounded-full bg-tertiary/80 backdrop-blur-sm border border-secondary/30"
           aria-label="Previous section"
         >
-          <ChevronLeft className="w-6 h-6 text-secondary group-hover:text-white transition-colors" />
+          <ChevronLeft className="w-6 h-6 text-secondary" />
         </Link>
       </div>
 
-      {/* Right Arrow - Next Section */}
+      {/* Right Arrow - Next Section (Hidden but functional for keyboard) */}
       <div
-        className={`fixed right-4 top-1/2 -translate-y-1/2 z-50 transition-all duration-300 ${
-          nextRoute
-            ? 'opacity-100 cursor-pointer hover:scale-110'
-            : 'opacity-0 pointer-events-none'
-        }`}
+        className="fixed right-4 top-1/2 -translate-y-1/2 z-50 opacity-0 pointer-events-none"
       >
         <Link
           href={nextRoute || '#'}
@@ -84,10 +76,10 @@ export default function NavigationArrows() {
             e.preventDefault()
             if (nextRoute) handleNavigate(nextRoute, 'forward')
           }}
-          className="flex items-center justify-center w-12 h-12 rounded-full bg-tertiary/80 backdrop-blur-sm border border-secondary/30 hover:border-secondary hover:bg-tertiary transition-all duration-300 group"
+          className="flex items-center justify-center w-12 h-12 rounded-full bg-tertiary/80 backdrop-blur-sm border border-secondary/30"
           aria-label="Next section"
         >
-          <ChevronRight className="w-6 h-6 text-secondary group-hover:text-white transition-colors" />
+          <ChevronRight className="w-6 h-6 text-secondary" />
         </Link>
       </div>
     </>
