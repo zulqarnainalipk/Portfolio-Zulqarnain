@@ -60,7 +60,7 @@ export default function Skills() {
                 whileHover={{ scale: 1.03 }}
                 className="bg-primary/50 rounded-lg p-3 text-center hover:bg-secondary/10 transition-all duration-300"
               >
-                <span className="text-xl mb-1 block">{spec.icon}</span>
+             
                 <span className="text-white text-xs font-medium">{spec.title}</span>
               </motion.div>
             ))}
